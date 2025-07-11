@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "esnext", // 最新 JavaScript 特性支持
+    "module": "esnext", // 使用 ES Module
+    "moduleResolution": "bundler", // Node 模塊解析
+    "baseUrl": ".", // 設定基礎路徑
+    "paths": {
+      "@/*": ["./src/*"] // 路徑別名，對應 Vite 的 `resolve.alias`
+    },
+    "esModuleInterop": true, // 支持 CommonJS 和 ES Module 互操作
+    "skipLibCheck": true, // 跳過類型庫檢查以加快構建速度
+    "useDefineForClassFields": true, // 支持 Vue 組件中的 class fields
+    "types": ["node", "vite/client"], // 提供 Node 和 Vite 類型支持
+    "allowImportingTsExtensions": true, // 允許導入 .ts 擴展名文件
+    "resolveJsonModule": true, // 允許導入 JSON 模塊
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "jsxImportSource": "vue"
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}
